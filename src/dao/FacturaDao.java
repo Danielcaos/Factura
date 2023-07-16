@@ -14,8 +14,8 @@ public class FacturaDao {
 	}
 	
 	public boolean insertar(Factura factura) throws SQLException {
-		String sql = "INSERT INTO factura (fact_numero, fact_nombrecliente, fact_fecha, fact_subtotal, fact_iva, fact_total) VALUES ('"
-				+factura.getNumero()+"','"+factura.getCliente()+"','"+factura.getFecha()+"','"+factura.getSubtotal()+"','"+factura.getIva()+"','"+factura.getTotal()+"')";
+		String sql = "INSERT INTO factura (fact_nombrecliente, fact_fecha, fact_subtotal, fact_iva, fact_total) VALUES ('"
+				+factura.getCliente()+"','"+factura.getFecha()+"','"+factura.getSubtotal()+"','"+factura.getIva()+"','"+factura.getTotal()+"')";
 		try {
 			con.insert(sql);
 			return true;

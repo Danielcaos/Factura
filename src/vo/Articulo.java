@@ -10,6 +10,11 @@ public class Articulo {
     	
     }
     
+	public Articulo(String nombre, double valor) {
+		this.nombre = nombre;
+		this.valor = valor;
+	}
+
 	public Articulo(int id, String nombre, double valor) {
 		this.id = id;
 		this.nombre = nombre;

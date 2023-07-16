@@ -11,7 +11,7 @@ public class EjecutarConexion {
 	public static void main(String[] args) throws SQLException {
 		// TODO Auto-generated method stub
 		//Date date = new Date();
-		//Factura f = new Factura(2,"Daniel", date, 12.3, 19, 15.3);
+		//Factura f = new Factura("Daniel", date, 12.3, 19, 15.3);
 		
 		//FacturaDao fd = new FacturaDao();
 		

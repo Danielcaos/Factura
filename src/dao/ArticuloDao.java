@@ -40,7 +40,7 @@ public class ArticuloDao {
 	}
 	
 	public boolean insertar(Articulo articulo) throws SQLException {
-		String sql = "INSERT INTO articulo (arti_nombre, arti_valor, arti_id) VALUES ('"+articulo.getNombre()+"','"+articulo.getValor()+"','"+articulo.getId()+"')";
+		String sql = "INSERT INTO articulo (arti_nombre, arti_valor) VALUES ('"+articulo.getNombre()+"','"+articulo.getValor()+"')";
 		try {
 			con.insert(sql);
 			return true;

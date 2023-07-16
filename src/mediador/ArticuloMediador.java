@@ -10,8 +10,8 @@ public class ArticuloMediador {
 	
 	private ArticuloDao ad;
 	
-	public ArticuloMediador() {
-		ad = new ArticuloDao();
+	public ArticuloMediador(ArticuloDao ad) {
+		this.ad = ad;
 	}
 	
 public boolean crearArticulo(Articulo a) throws SQLException {

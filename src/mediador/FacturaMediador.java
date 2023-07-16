@@ -11,8 +11,8 @@ public class FacturaMediador {
 	
 	private FacturaDao fd;
 	
-	public FacturaMediador() {
-		fd = new FacturaDao();
+	public FacturaMediador(FacturaDao fd) {
+		this.fd = fd;
 	}
 	
 	public boolean crearFactura(Factura f) throws SQLException {

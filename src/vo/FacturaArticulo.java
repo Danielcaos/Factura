@@ -10,8 +10,13 @@ public class FacturaArticulo {
 		
 	}
 
+	public FacturaArticulo(int factura, int articulo, int cantidad) {
+		this.factura = factura;
+		this.articulo = articulo;
+		this.cantidad = cantidad;
+	}
+
 	public FacturaArticulo(int id, int factura, int articulo, int cantidad) {
-		super();
 		this.id = id;
 		this.factura = factura;
 		this.articulo = articulo;

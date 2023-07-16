@@ -14,6 +14,16 @@ public class Factura {
     	
     }
     
+	public Factura(String cliente, Date fecha, double subtotal, int iva, double total) {
+		this.cliente = cliente;
+		this.fecha = fecha;
+		this.subtotal = subtotal;
+		this.iva = iva;
+		this.total = total;
+	}
+
+
+
 	public Factura(int numero, String cliente, Date fecha, double subtotal, int iva, double total) {
 		this.numero = numero;
 		this.cliente = cliente;
